@@ -88,7 +88,6 @@ The Discovery service Web API supports the CORS standard for cross-origin access
   
     ```http      
     GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances(<guid>)
-    GET https://disco.crm.dynamics.com/api/discovery/v9.0/Instances(<guid>)  
     ```  
   
 -   You can use the UniqueName attribute as an alternate key.  
@@ -103,12 +102,6 @@ The Discovery service Web API supports the CORS standard for cross-origin access
     GET https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances?$select=DisplayName,Description&$filter=Type+eq+0   
     ```  
   
--   Retrieve a specific instance's ID property value.  
-  
-    ```http  
-    GET https://disco.crm.dynamics.com/api/discovery/v9.0/Instances(UniqueName='myorg')/Id/$value  
-    ```
-
 ## See also
 
 [Web API Global Discovery Service sample (C#)](samples/global-discovery-service-csharp.md)
