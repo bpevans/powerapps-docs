@@ -17,6 +17,9 @@ search.app:
 ---
 # Use the Discovery Service with the SDK Assemblies
 
+> [!IMPORTANT]
+> Effective Decempber 1, 2019, the Regional Discovery service is deprecated. More information: [Important changes (deprecations)](/power-platform/important-changes-coming/). See [Global Discovery](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api) and [Migrating from regional to global discovery](BUGBUG-missing-link) for migration details.
+
 [!INCLUDE [cc-discovery-service-description](../includes/cc-discovery-service-description.md)]
 
 
