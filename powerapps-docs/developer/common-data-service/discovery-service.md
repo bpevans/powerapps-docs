@@ -20,12 +20,15 @@ search.app:
 [!INCLUDE [cc-discovery-service-description](includes/cc-discovery-service-description.md)]
 
 
-A Discovery service is accessed through either the Web API or the Organization Service.
+A Discovery service is accessed through the Web API.
 
 - For the Web API: [Discover the URL for your organization using the Web API](webapi/discover-url-organization-web-api.md)
 - For the Organization Service: [Use the Discovery Service with the Microsoft.Xrm.Sdk.Discovery NameSpace](org-service/discovery-service.md)
 
+> [!NOTE]
+> The legacy Regioanl Discovery service that was accessible via the Organization Service SDK has been deprecated. See [Important changes (deprecations)](/power-platform/important-changes-coming.md) for more details.
+
 ### See Also
 
 [Use the Common Data Service Web API](webapi/overview.md)<br />
-[Use the Common Data Service Organization Service](org-service/overview.md)
+[Migrating from Regional Discovery to Global Discovery](BUGBUG-missing-link)
