@@ -31,4 +31,4 @@ A Discovery service is accessed through the Web API.
 ### See Also
 
 [Use the Common Data Service Web API](webapi/overview.md)<br />
-[Migrating from Regional Discovery to Global Discovery](BUGBUG-missing-link)
+[Modify existing code to use Global Discovery Service Web API](discovery-orgsdk-to-webapi.md)
