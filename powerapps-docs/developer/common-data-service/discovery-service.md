@@ -26,9 +26,9 @@ A Discovery service is accessed through the Web API.
 - For the Organization Service: [Use the Discovery Service with the Microsoft.Xrm.Sdk.Discovery NameSpace](org-service/discovery-service.md)
 
 > [!NOTE]
-> The legacy Regioanl Discovery service that was accessible via the Organization Service SDK has been deprecated. See [Important changes (deprecations)](/power-platform/important-changes-coming.md) for more details.
+> The legacy Discovery service that was accessible via the Organization Service SDK has been deprecated along with the regional Discovery WebAPI endpoints. See [Important changes (deprecations)](/power-platform/important-changes-coming.md) for more details.
 
 ### See Also
 
 [Use the Common Data Service Web API](webapi/overview.md)<br />
-[Modify existing code to use Global Discovery Service Web API](discovery-orgsdk-to-webapi.md)
+[Modify existing code to use Discovery Service Web API endpoint](discovery-orgsdk-to-webapi.md)
