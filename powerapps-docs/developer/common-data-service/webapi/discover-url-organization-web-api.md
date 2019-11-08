@@ -25,28 +25,24 @@ search.app:
 
 [!INCLUDE [cc-discovery-service-description](../includes/cc-discovery-service-description.md)]
 
-With the Web API discovery service, you can use standard `$filter` and `$select` parameters to a Web API service request to customize the returned list of instance data.
-<!-- TODO should only talk about the global discovery service -->
+With the Web API Discovery service, you can use standard `$filter` and `$select` parameters to a Web API service request to customize the returned list of instance data.
 
-## Global discovery service
-
-In addition to datacenter specific Discovery services, that are available on the 2011 (SOAP) endpoint and through the Web API, there is also a Web API only Global Discovery service that spans all operational datacenters. For more information about the Discovery service on the 2011 endpoint see [Discovery Service](../org-service/discovery-service.md)
+## Discovery service
 
 > [!NOTE]
-> It is recommended that users switch from the legacy regional discovery service (`https://disco.crm.dynamics.com`) to global discovery service (`https://globaldisco.crm.dynamics.com`).
-> 
-> For Dynamics 365 US Government users, the global discovery service is available for the **GCC** and **GCC High** users, and the URL is different from the regular global discovery service URL. More information: [Dynamics 365 Government URLs](https://docs.microsoft.com/dynamics365/customer-engagement/admin/government/microsoft-dynamics-365-government#dynamics-365-us-government-urls).
+> The regional Discovery service Web API endpoints are deprecated and users must switch to using the global Discovery service endpoint (documented in this page).  
+> For Dynamics 365 US Government users, a global Discovery Web API endpoint is available for the **GCC** and **GCC High** users, and the URL is different from the regular global discovery service URL. More information: [Dynamics 365 Government URLs](https://docs.microsoft.com/dynamics365/customer-engagement/admin/government/microsoft-dynamics-365-government#dynamics-365-us-government-urls).
 
   
-## Information provided by the Global Discovery service 
+## Information provided by the Discovery service Web API 
  
- Organization information is stored in the `Instance` entity of the Global Discovery service.  To see the kind of information contained in that entity, send an HTTP GET request to the service for one of your instances.  
+Organization information is stored in the `Instance` entity of the Discovery service.  To see the kind of information contained in that entity, send an HTTP GET request to the service for one of your instances.  
   
 ```http  
 GET https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances(UniqueName='myorg')  
 ```  
   
-In the above example, the Global Discovery service of Common Data Service is used to obtain the organization information of the instance with a unique name of "myorg". More details about this request is expanded upon later in this topic.  
+In the above example, the Discovery service of Common Data Service is used to obtain the organization information of the instance with a unique name of "myorg". More details about this request is expanded upon later in this topic.  
 
  
 
@@ -104,5 +100,5 @@ The Discovery service Web API supports the CORS standard for cross-origin access
   
 ## See also
 
-[Web API Global Discovery Service sample (C#)](samples/global-discovery-service-csharp.md)
+[Web API Discovery Service sample (C#)](samples/global-discovery-service-csharp.md)
 
