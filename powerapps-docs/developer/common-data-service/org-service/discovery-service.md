@@ -18,7 +18,7 @@ search.app:
 # Use the Discovery Service with the SDK Assemblies
 
 > [!IMPORTANT]
-> Effective Decempber 1, 2019, the Regional Discovery service is deprecated. More information: [Important changes (deprecations)](/power-platform/important-changes-coming/). See [Global Discovery](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api) and [Modify existing code to use Global Discovery Web API](../discovery-orgsdk-to-webapi.md) for migration details.
+> Effective Decempber 1, 2019, the Discovery service that is accessible via the Organization Service SDK has been deprecated along with the regional Discovery WebAPI endpoints. More information: [Important changes (deprecations)](/power-platform/important-changes-coming/). See [Discovery WebAPI](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api) and [Modify existing code to use Discovery Web API](../discovery-orgsdk-to-webapi.md) for migration details.
 
 [!INCLUDE [cc-discovery-service-description](../includes/cc-discovery-service-description.md)]
 
