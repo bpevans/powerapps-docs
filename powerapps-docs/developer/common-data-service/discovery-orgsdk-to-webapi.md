@@ -1,14 +1,14 @@
-# Modify existing code to use Global Discovery Web API
+# Modify existing code to use Discovery Web API
 
 The Discovery Service Web API can be used to discover instances for your users. If you currently use Organization Service SDK to discover your instances, you can follow the steps in this document to start consuming the Web API. 
 A detailed description of the Web API can be found on the [Discovery Service Web API](/powerapps/developer/common-data-service/webapi/discover-url-organization-web-api) page.
  
-If you currently use the Web API, it is recommended that you make sure to point to the Global Discovery service endpoint (https://globaldisco.crm.dynamics.com) of the Discovery service.
+If you currently use the Web API, it is recommended that you make sure to point to the global Discovery service endpoint (https://globaldisco.crm.dynamics.com) of the Discovery service.
 The rest of this document describes the changes that might be needed to use the Web API
  
 ## Authentication
 The Discovery Service Web API supports authentication with OAuth 2.0 access tokens. 
-If your code uses WS-Trust SAML tokens, you will need to change code acquire OAuth 2.0 token from Azure AD, and pass it to the Global Discovery Service Web API call.
+If your code uses WS-Trust SAML tokens, you will need to change code acquire OAuth 2.0 token from Azure AD, and pass it to the  Discovery Service Web API call.
  
 ## OData API calls
 The calls below are supported by the Web API. These follow the OData v4 standard and 
@@ -40,7 +40,7 @@ Response
 ```http  
 GET https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances(<guid>)
 ```  
--    Get a single  instance by name
+-    Get a single instance by unique name
 ```http  
 GET https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances(UniqueName='myorg')  
 ```  
@@ -75,7 +75,7 @@ UniqueName|UniqueName
 UrlName|UrlName
 
 ## Deprecated API call
-The WCF SDK call GetUserIdByExternalId is not supported in the Web API.
+The Organization Service SDK call GetUserIdByExternalId is not supported in the Web API.
 
 ## See Also
 [Discovery Services](/powerapps/developer/common-data-service/discovery-service)
